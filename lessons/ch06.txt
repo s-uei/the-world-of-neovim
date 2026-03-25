@@ -1,0 +1,137 @@
+
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║          CHAPTER 6: THE LAZYVIM CITADEL                          ║
+  ║          🏰  Quest: Defeat the GUI Sorcerer  🏰                   ║
+  ╚══════════════════════════════════════════════════════════════════╝
+
+  READ this scroll, then complete the exercises below.
+  When finished, SAVE and QUIT  (:wq).
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE STORY  ★
+
+  You have conquered the Tmux Tower!  Ahead lies the final bastion:
+  the LazyVim Citadel, where the GUI Sorcerer plots to destroy all
+  terminal-based editors forever.
+
+  The legendary Dragon of LazyVim appears — not as an enemy, but
+  as a mighty ALLY!  The Dragon roars:
+
+         ____    _          ____
+        /    \  | |        |    \
+       |  ()  | | |        | ()  |    🐉 LAZYVIM DRAGON 🐉
+        \____/  |_|        |____/
+
+      "Rider! I am LazyVim — the blazing-fast Neovim distribution!
+       Mount me and together we shall topple the GUI Sorcerer!
+       But first, learn my powers!"
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  LESSON: LazyVim Essentials  ★
+
+  LazyVim is a Neovim distribution (pre-configured setup) built on
+  the lazy.nvim plugin manager.  It gives you a full IDE experience
+  out of the box.
+
+  INSTALLATION (one-time setup):
+  ─────────────────────────────────────────────────────────────────
+  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  nvim   (then wait for plugins to install automatically)
+  ─────────────────────────────────────────────────────────────────
+
+  KEY CONCEPTS:
+  ┌────────────────────────────────────────────────────────────────┐
+  │  <leader> key  =  Space (by default in LazyVim)                │
+  └────────────────────────────────────────────────────────────────┘
+
+  ESSENTIAL LAZYVIM KEYMAPS:
+  ┌────────────────────────────────────────────────────────────────┐
+  │  Space + Space   Find files (fuzzy finder)                     │
+  │  Space + /       Live grep (search in all files)               │
+  │  Space + e       Open file explorer (Neo-tree)                 │
+  │  Space + b + d   Close current buffer/tab                      │
+  ├────────────────────────────────────────────────────────────────┤
+  │  Space + l + l   Open lazy.nvim plugin manager                 │
+  │  Space + l + i   Plugin info                                   │
+  │  Space + l + u   Update all plugins                            │
+  ├────────────────────────────────────────────────────────────────┤
+  │  Ctrl-/          Toggle floating terminal                      │
+  │  Space + g + g   Open Lazygit (if installed)                   │
+  └────────────────────────────────────────────────────────────────┘
+
+  CODE NAVIGATION (with LSP):
+  ┌────────────────────────────────────────────────────────────────┐
+  │  g + d           Go to DEFINITION                              │
+  │  g + r           Go to REFERENCES                              │
+  │  g + i           Go to IMPLEMENTATION                          │
+  │  K               Show HOVER documentation                      │
+  │  Space + c + a   Code ACTION (fix, refactor, etc.)             │
+  └────────────────────────────────────────────────────────────────┘
+
+  WINDOWS & SPLITS:
+  ┌────────────────────────────────────────────────────────────────┐
+  │  Ctrl-h/j/k/l    Navigate between splits (like tmux!)          │
+  │  Space + w + v   Split VERTICALLY                              │
+  │  Space + w + s   Split HORIZONTALLY                            │
+  │  Space + w + d   Delete (close) split                          │
+  └────────────────────────────────────────────────────────────────┘
+
+  CUSTOMIZING LAZYVIM:
+  ─────────────────────────────────────────────────────────────────
+  Add plugins:   Edit  ~/.config/nvim/lua/plugins/*.lua
+  Add keymaps:   Edit  ~/.config/nvim/lua/config/keymaps.lua
+  Add options:   Edit  ~/.config/nvim/lua/config/options.lua
+  ─────────────────────────────────────────────────────────────────
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  YOUR QUEST  ★
+
+  The GUI Sorcerer has scattered the Dragon's abilities (keymaps)
+  across this scroll in a scrambled order.  Reorganize them by
+  matching each keymap to its description.
+
+  REARRANGE THE LINES in the KEYMAP MAPPING section below so that
+  each keybinding is followed immediately by its correct description.
+
+  HINT: The correct order should match the index numbers [1]-[5].
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  KEYMAP MAPPING — Sort these into the correct order  ★
+
+  Complete this key → action table (replace ??? with the right answer)
+
+  [1] Space + e          → ???
+  [2] Space + Space      → ???
+  [3] Space + g + g      → ???
+  [4] g + d              → ???
+  [5] Ctrl-/             → ???
+
+  WORD BANK (pick the correct description for each):
+    (A) Open file explorer (Neo-tree)
+    (B) Find files with fuzzy finder
+    (C) Toggle floating terminal
+    (D) Go to definition
+    (E) Open Lazygit
+
+  Replace each ??? with the letter (A, B, C, D, or E) that matches.
+  Example:  [1] Space + e  → A
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  FINAL BATTLE NOTE  ★
+
+  Once you answer correctly, the Dragon of LazyVim will carry you
+  into battle against the GUI Sorcerer!  The war is nearly won.
+  Efficiency, speed, and keyboard mastery will be your weapons.
+
+  Remember the Vim Warrior's Creed:
+    "The mouse is a crutch; the keyboard is a sword.
+     Speed comes not from haste, but from mastery."
+
+══════════════════════════════════════════════════════════════════════
+  Save and quit when done:  :wq
+══════════════════════════════════════════════════════════════════════

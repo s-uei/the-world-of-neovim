@@ -1,0 +1,114 @@
+
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║          CHAPTER 4: THE ORACLE'S PEAK                            ║
+  ║          🔭  Quest: Decipher the Prophecy  🔭                     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+
+  READ this scroll, then complete the exercises below.
+  When finished, SAVE and QUIT  (:wq).
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE STORY  ★
+
+  You have cleansed the Scriptorium!  A hidden staircase appears,
+  leading to the misty Oracle's Peak.  At the summit, the ancient
+  Oracle speaks in riddles encoded by the GUI Sorcerer:
+
+      "The truth is hidden in the text.
+       Search, seek, and replace the falsehoods
+       with the light of knowledge.
+       Only then shall the path forward be revealed."
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  LESSON: Search and Command-Line Editing  ★
+
+  ┌────────────────────────────────────────────────────────────────┐
+  │  /pattern   Search FORWARD for pattern                         │
+  │  ?pattern   Search BACKWARD for pattern                        │
+  │  n          Jump to NEXT match                                 │
+  │  N          Jump to PREVIOUS match                             │
+  │  *          Search for word UNDER cursor (forward)             │
+  │  #          Search for word UNDER cursor (backward)            │
+  ├────────────────────────────────────────────────────────────────┤
+  │  :s/old/new/     Replace FIRST occurrence on current line      │
+  │  :s/old/new/g    Replace ALL on current line                   │
+  │  :%s/old/new/g   Replace ALL in the whole file                 │
+  │  :%s/old/new/gc  Replace ALL with CONFIRMATION                 │
+  ├────────────────────────────────────────────────────────────────┤
+  │  :w     Write (save) the file                                  │
+  │  :q     Quit (fails if unsaved changes)                        │
+  │  :wq    Write and quit                                         │
+  │  :q!    Quit WITHOUT saving (force quit)                       │
+  │  :e!    Reload the file (discard changes)                      │
+  ├────────────────────────────────────────────────────────────────┤
+  │  :set number      Show line numbers                            │
+  │  :set nonumber    Hide line numbers                            │
+  │  :set hlsearch    Highlight search matches                     │
+  └────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  YOUR QUEST  ★
+
+  The Oracle's message below has been scrambled by the Sorcerer.
+  The word "LIE" appears wherever the truth should be.  You must
+  replace every "LIE" with the correct word shown in parentheses.
+
+  Use the substitute command:
+    :%s/LIE/TRUTH/g   (for a global replace of one word)
+  Or do each one individually with  /LIE  then  n  to find each.
+
+  After the substitutions, the Oracle's true message will be clear.
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE ORACLE'S SCRAMBLED MESSAGE — Decipher it!  ★
+
+  Hint: Each [REPLACE: LIE → WORD] tells you what to substitute.
+
+  [REPLACE: KEYBOARD → SWORD ]
+  The Vim Warrior's KEYBOARD is their greatest weapon.
+
+  [REPLACE: NORMAL → PEACE ]
+  In NORMAL mode, the warrior stands in NORMAL, ready to strike.
+
+  [REPLACE: INSERT → CREATION ]
+  INSERT mode is the realm of INSERT and imagination.
+
+  [REPLACE: SEARCH → WISDOM ]
+  To /SEARCH is to seek SEARCH in the vast scroll.
+
+  [REPLACE: NEOVIM → DESTINY ]
+  NEOVIM is not just an editor — it is your NEOVIM.
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  YOUR TASK  ★
+
+  Below is the ENCODED prophecy.  Replace the ENCODED words with
+  the TRUE words as indicated.  Edit only the ENCODED PROPHECY:
+
+  --- ENCODED PROPHECY (edit this section) ---
+
+  The power of KEYBOARD flows through your fingers like lightning.
+  Return to NORMAL mode as a warrior sheathes their blade.
+  In INSERT mode, inscribe your will upon the digital realm.
+  Let /SEARCH guide you through darkness like a lantern.
+  For NEOVIM is the ancient art, reborn in modern light.
+
+  --- END OF ENCODED PROPHECY ---
+
+  Perform these substitutions on the lines above:
+    :s/KEYBOARD/SWORD/g         on the first prophecy line
+    :s/NORMAL/PEACE/g           on the second prophecy line
+    :s/INSERT/CREATION/g        on the third prophecy line
+    :s/\/SEARCH/WISDOM/g        on the fourth prophecy line
+    :s/NEOVIM/DESTINY/g         on the fifth prophecy line
+
+  Or simply use  :%s/KEYBOARD/SWORD/g  etc. for the whole file.
+
+══════════════════════════════════════════════════════════════════════
+  Save and quit when done:  :wq
+══════════════════════════════════════════════════════════════════════

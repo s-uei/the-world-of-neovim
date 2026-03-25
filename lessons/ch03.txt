@@ -1,0 +1,88 @@
+
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║          CHAPTER 3: THE HAUNTED SCRIPTORIUM                      ║
+  ║          💀  Quest: Purge the Dark Scrolls  💀                    ║
+  ╚══════════════════════════════════════════════════════════════════╝
+
+  READ this scroll, then complete the exercises below.
+  When finished, SAVE and QUIT  (:wq).
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE STORY  ★
+
+  The Cave door swings open!  Beyond it lies the Haunted Scriptorium,
+  a vast library where the GUI Sorcerer's minions have corrupted the
+  sacred texts with dark words and forbidden phrases.
+
+  The Ghost Librarian whispers to you:
+
+      "The ancient prophecy has been defiled!
+       Use the Power of Deletion to cleanse it.
+       Remove the cursed words and restore the truth!"
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  LESSON: Deletion Commands  ★
+
+  From Normal mode (press Esc), you can delete with:
+
+  ┌────────────────────────────────────────────────────────────────┐
+  │  x       Delete the character UNDER the cursor                 │
+  │  X       Delete the character BEFORE the cursor                │
+  ├────────────────────────────────────────────────────────────────┤
+  │  dw      Delete from cursor to end of WORD                     │
+  │  db      Delete from cursor back to start of word              │
+  │  d$      Delete from cursor to END of line                     │
+  │  d0      Delete from cursor to START of line                   │
+  ├────────────────────────────────────────────────────────────────┤
+  │  dd      Delete the ENTIRE current line                        │
+  │  5dd     Delete 5 lines                                        │
+  ├────────────────────────────────────────────────────────────────┤
+  │  u       UNDO the last change                                  │
+  │  Ctrl-r  REDO (undo the undo)                                  │
+  └────────────────────────────────────────────────────────────────┘
+
+  TIP: Most delete commands can use motions:
+       d3w  = delete 3 words
+       dG   = delete from here to end of file
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  YOUR QUEST  ★
+
+  The corrupted prophecy appears below.  Lines marked with
+  <<DELETE THIS LINE>> must be entirely removed with  dd.
+  Words marked with  --CURSED--  must be deleted (position cursor
+  on the word and use  dw  or  diw  to remove it and any space).
+
+  After cleansing, the prophecy should read as pure truth.
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE CORRUPTED PROPHECY — Cleanse it!  ★
+
+  The --CURSED-- hero shall rise from the east,
+<<DELETE THIS LINE>>  [[ DARK WHISPERS: ignore the path! ]]
+  wielding the sacred --CURSED-- editor of light.
+<<DELETE THIS LINE>>  [[ CORRUPTION: doubt yourself! ]]
+  The GUI Sorcerer shall --CURSED-- tremble at the sight,
+  of fingers dancing swift --CURSED-- across the keys.
+<<DELETE THIS LINE>>  [[ TAINT: click the mouse instead! ]]
+  No mouse shall --CURSED-- bind them, no GUI hold sway,
+  for the Vim Warrior fights with keystrokes every day.
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  EXPECTED RESULT (what it should look like after cleansing)  ★
+
+  The hero shall rise from the east,
+  wielding the sacred editor of light.
+  The GUI Sorcerer shall tremble at the sight,
+  of fingers dancing swift across the keys.
+  No mouse shall bind them, no GUI hold sway,
+  for the Vim Warrior fights with keystrokes every day.
+
+══════════════════════════════════════════════════════════════════════
+  Save and quit when done:  :wq
+══════════════════════════════════════════════════════════════════════
