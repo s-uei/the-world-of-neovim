@@ -1,0 +1,108 @@
+
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║          CHAPTER 5: THE TMUX TOWER                               ║
+  ║          🗼  Quest: Control the Multiplexed Realm  🗼              ║
+  ╚══════════════════════════════════════════════════════════════════╝
+
+  READ this scroll, then complete the exercises below.
+  This chapter is different: you will use TMUX COMMANDS in your
+  terminal, not just Neovim editing.
+
+  When finished with the READING section, SAVE and QUIT  (:wq).
+  The game will then guide you through the tmux exercises.
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE STORY  ★
+
+  The Oracle's peak reveals a distant tower on the horizon — the
+  legendary Tmux Tower, where the greatest warriors can control
+  MULTIPLE REALMS simultaneously!
+
+  The Tower Guardian, a stern figure named Multiplex, blocks the
+  entrance and tests you:
+
+      "Can you split the world into panes?
+       Can you juggle windows like a master?
+       Only those who know the prefix shall pass!"
+
+  The prefix is the key to all tmux power:  Ctrl-b
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  LESSON: tmux Fundamentals  ★
+
+  tmux is a Terminal MUltipleXer. It lets you:
+    • Run multiple terminal sessions in one window
+    • Split your screen into panes
+    • Detach and reattach sessions (survive disconnections!)
+
+  ─────────────────────────────────────────────────────────────────
+
+  PREFIX KEY:   Ctrl-b    (press and RELEASE, then press the command)
+
+  ─────────────────────────────────────────────────────────────────
+
+  SESSIONS (the outermost container):
+  ┌────────────────────────────────────────────────────────────────┐
+  │  tmux new -s <name>          Start a named session             │
+  │  tmux attach -t <name>       Attach to a session               │
+  │  tmux ls                     List sessions                     │
+  │  Prefix + d                  Detach from session               │
+  │  Prefix + $                  Rename current session            │
+  └────────────────────────────────────────────────────────────────┘
+
+  WINDOWS (like tabs):
+  ┌────────────────────────────────────────────────────────────────┐
+  │  Prefix + c                  Create new window                 │
+  │  Prefix + ,                  Rename current window             │
+  │  Prefix + n                  Next window                       │
+  │  Prefix + p                  Previous window                   │
+  │  Prefix + 0-9                Switch to window by number        │
+  │  Prefix + &                  Kill current window               │
+  └────────────────────────────────────────────────────────────────┘
+
+  PANES (split screens):
+  ┌────────────────────────────────────────────────────────────────┐
+  │  Prefix + %                  Split VERTICALLY (side by side)   │
+  │  Prefix + "                  Split HORIZONTALLY (top/bottom)   │
+  │  Prefix + Arrow              Move between panes                │
+  │  Prefix + z                  Zoom/unzoom current pane          │
+  │  Prefix + q                  Show pane numbers                 │
+  │  Prefix + x                  Kill current pane                 │
+  └────────────────────────────────────────────────────────────────┘
+
+  COPY MODE:
+  ┌────────────────────────────────────────────────────────────────┐
+  │  Prefix + [                  Enter copy mode (scroll up!)      │
+  │  q                           Exit copy mode                    │
+  └────────────────────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  QUEST TASKS (complete AFTER saving this file)  ★
+
+  The Tower Guardian has set 4 challenges.  The game script will
+  verify each one automatically after you quit this file.
+
+  CHALLENGE 1: Create a tmux session
+    → Run:  tmux new -s neovim-tower
+    → Then detach:  Prefix + d
+    → Return to the game and it will detect the session.
+
+  CHALLENGE 2: Split the pane
+    → Inside a tmux session, press:  Prefix + %
+    → (This splits your pane vertically)
+
+  CHALLENGE 3: Navigate between panes
+    → Use:  Prefix + Arrow keys  to move between panes
+
+  CHALLENGE 4: Rename a window
+    → Press:  Prefix + ,
+    → Type:  vim-realm
+    → Press Enter
+
+══════════════════════════════════════════════════════════════════════
+  Save and quit when done reading:  :wq
+  (The game will guide you through the tmux challenges next.)
+══════════════════════════════════════════════════════════════════════

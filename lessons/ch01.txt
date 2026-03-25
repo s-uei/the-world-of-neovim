@@ -1,0 +1,97 @@
+
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║          CHAPTER 1: THE VILLAGE OF VIM                           ║
+  ║          ⚔  Quest: Escape the Burning Village  ⚔                ║
+  ╚══════════════════════════════════════════════════════════════════╝
+
+  READ this entire scroll before attempting the quest.
+  When you are done, SAVE and QUIT  (:wq)  to return to the game.
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE STORY  ★
+
+  The ancient village of Vim is burning! The evil GUI Sorcerer has
+  set it ablaze with a cursed mouse-click spell. The Elder hands you
+  a glowing scroll and shouts:
+
+      "Only a true Vim Warrior can navigate this chaos!
+       Learn the sacred movement arts — or perish!"
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  LESSON: Basic Movement Commands  ★
+
+  In Normal mode (press Esc to enter Normal mode), you can move the
+  cursor using these keys.  No arrow keys allowed in this realm!
+
+  ┌─────────────────────────────────────────┐
+  │  h   ←   move LEFT one character        │
+  │  l   →   move RIGHT one character       │
+  │  j   ↓   move DOWN one line             │
+  │  k   ↑   move UP one line               │
+  ├─────────────────────────────────────────┤
+  │  w       jump to start of NEXT word     │
+  │  b       jump BACK to start of word     │
+  │  e       jump to END of current word    │
+  ├─────────────────────────────────────────┤
+  │  0       jump to start of LINE          │
+  │  $       jump to END of line            │
+  ├─────────────────────────────────────────┤
+  │  gg      jump to FIRST line of file     │
+  │  G       jump to LAST line of file      │
+  │  :42     jump to line 42                │
+  └─────────────────────────────────────────┘
+
+  TIP: You can prefix commands with a number!
+       5j  = move down 5 lines
+       3w  = jump forward 3 words
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  YOUR QUEST  ★
+
+  The Elder has left a secret password scattered across the map
+  below.  Collect the hidden rune words by reading the map and
+  navigating with h/j/k/l.
+
+  Then, in the ANSWER section at the bottom, REPLACE each ??? with
+  the correct rune word.  Use the movement commands to navigate there.
+
+  The runes are:
+    Rune 1  (line with "[RUNE-1]")  →  find the word after the arrow
+    Rune 2  (line with "[RUNE-2]")  →  find the word after the arrow
+    Rune 3  (line with "[RUNE-3]")  →  find the word after the arrow
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE VILLAGE MAP  ★
+
+       ~~~~  FIRE  ~~~~  FIRE  ~~~~  FIRE  ~~~~
+      /                                        \
+     |  🏠 BLACKSMITH   →  [RUNE-1] →  EMBER   |
+     |                                         |
+     |  🏠 INN          →  [RUNE-2] →  SHADOW  |
+     |                                         |
+     |  🏠 ELDER'S HUT  →  [RUNE-3] →  MOTION  |
+      \                                        /
+       ~~~~  FIRE  ~~~~  FIRE  ~~~~  FIRE  ~~~~
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  ANSWER SECTION — Edit ONLY the ??? below  ★
+
+  Navigate here with  G  (go to last line) then find the ???
+
+  The three rune words spell the Warrior's Oath:
+
+  Rune 1: ???
+  Rune 2: ???
+  Rune 3: ???
+
+  (Replace each ??? with the rune word from the map above.
+   Use  i  to enter Insert mode, edit the text, then press  Esc  )
+
+══════════════════════════════════════════════════════════════════════
+  Save and quit when done:  :wq
+══════════════════════════════════════════════════════════════════════

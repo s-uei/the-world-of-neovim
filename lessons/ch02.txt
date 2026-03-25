@@ -1,0 +1,107 @@
+
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║          CHAPTER 2: THE CAVE OF CURSORS                          ║
+  ║          🔮  Quest: Inscribe the Magic Runes  🔮                  ║
+  ╚══════════════════════════════════════════════════════════════════╝
+
+  READ this scroll, then complete the exercises below.
+  When finished, SAVE and QUIT  (:wq).
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE STORY  ★
+
+  You have escaped the burning village!  You now stand before the
+  entrance of the Cave of Cursors — a dark cavern sealed by an
+  ancient stone door.  Ancient script on the door reads:
+
+      "Only one who can write in the darkness may pass.
+       Inscribe the magic runes using the power of INSERT."
+
+  The Mage Aixa appears from the shadows and teaches you the
+  sacred Insert Mode commands:
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  LESSON: Insert Mode Commands  ★
+
+  From Normal mode (press Esc to reach it), use these to write text:
+
+  ┌────────────────────────────────────────────────────────────────┐
+  │  i   Insert BEFORE the cursor                                  │
+  │  a   Insert AFTER the cursor  (Append)                         │
+  │  I   Insert at the BEGINNING of the line                       │
+  │  A   Insert at the END of the line                             │
+  ├────────────────────────────────────────────────────────────────┤
+  │  o   Open a NEW LINE below and enter Insert mode               │
+  │  O   Open a NEW LINE above and enter Insert mode               │
+  ├────────────────────────────────────────────────────────────────┤
+  │  Esc  (or Ctrl-[)   Return to NORMAL mode                      │
+  └────────────────────────────────────────────────────────────────┘
+
+  WORKFLOW:
+    1. Press  Esc  to make sure you are in Normal mode.
+    2. Move the cursor to the desired position (h/j/k/l).
+    3. Press an insert command (i, a, o, etc.).
+    4. Type your text.
+    5. Press  Esc  to return to Normal mode.
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  YOUR QUEST  ★
+
+  The stone door has 5 blank rune slots.  You must fill in each
+  blank with the correct magic word.  The instructions appear in
+  [  ] brackets.  Replace only the [ INSERT: word ] markers.
+
+  HOW TO COMPLETE:
+    - Navigate to a line with  [ INSERT: ... ]
+    - Position cursor at the start of  [
+    - Press  dw  repeatedly to delete  [ INSERT:  word  ]  (5 words)
+      OR: use  ct]  to change up to  ]  OR: use  ciw  on each word
+    - Type the replacement text
+    - Press  Esc
+
+  (Alternatively: highlight the bracket expression and retype it.)
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  THE STONE DOOR — Fill in the runes  ★
+
+  RUNE SLOT 1 — The Word of Opening:
+  Knock three times and say: [ INSERT: OPEN ]
+
+  RUNE SLOT 2 — The Word of Light:
+  Speak against the darkness: [ INSERT: LUMINOS ]
+
+  RUNE SLOT 3 — The Warrior's Name:
+  Declare your title boldly: [ INSERT: CURSOR ]
+
+  RUNE SLOT 4 — The Word of Balance:
+  What keeps the cursor steady: [ INSERT: NORMAL ]
+
+  RUNE SLOT 5 — The Final Seal:
+  The source of all power: [ INSERT: NEOVIM ]
+
+══════════════════════════════════════════════════════════════════════
+
+  ★  EXPECTED RESULT (what the lines should look like after editing)  ★
+
+  RUNE SLOT 1 — The Word of Opening:
+  Knock three times and say: OPEN
+
+  RUNE SLOT 2 — The Word of Light:
+  Speak against the darkness: LUMINOS
+
+  RUNE SLOT 3 — The Warrior's Name:
+  Declare your title boldly: CURSOR
+
+  RUNE SLOT 4 — The Word of Balance:
+  What keeps the cursor steady: NORMAL
+
+  RUNE SLOT 5 — The Final Seal:
+  The source of all power: NEOVIM
+
+══════════════════════════════════════════════════════════════════════
+  Save and quit when done:  :wq
+══════════════════════════════════════════════════════════════════════
