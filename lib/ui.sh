@@ -35,7 +35,11 @@ clear_screen() {
 
 press_enter() {
     echo ""
-    echo -e "${DIM}  [ Press ENTER to continue ]${RESET}"
+    if [[ "${LANG_MODE:-en}" == "ja" ]]; then
+        echo -e "${DIM}  [ Enterキーを押して続ける ]${RESET}"
+    else
+        echo -e "${DIM}  [ Press ENTER to continue ]${RESET}"
+    fi
     read -r
 }
 
@@ -110,7 +114,11 @@ show_status() {
     local i
     for (( i=0; i<filled; i++ )); do bar+="█"; done
     for (( i=0; i<empty; i++ )); do bar+="░"; done
-    echo -e "  ${YELLOW}Progress: [${bar}] Chapter ${chapter}/${total}${RESET}"
+    if [[ "${LANG_MODE:-en}" == "ja" ]]; then
+        echo -e "  ${YELLOW}進行状況: [${bar}] 第${chapter}章/${total}章${RESET}"
+    else
+        echo -e "  ${YELLOW}Progress: [${bar}] Chapter ${chapter}/${total}${RESET}"
+    fi
 }
 
 # ─────────────────────────────────────────
@@ -118,20 +126,32 @@ show_status() {
 # ─────────────────────────────────────────
 show_success() {
     echo ""
-    echo -e "  ${BGREEN}✔  QUEST COMPLETE!${RESET}"
+    if [[ "${LANG_MODE:-en}" == "ja" ]]; then
+        echo -e "  ${BGREEN}✔  クエスト完了！${RESET}"
+    else
+        echo -e "  ${BGREEN}✔  QUEST COMPLETE!${RESET}"
+    fi
     echo -e "  ${GREEN}$1${RESET}"
     echo ""
 }
 
 show_failure() {
     echo ""
-    echo -e "  ${BRED}✘  QUEST FAILED${RESET}"
+    if [[ "${LANG_MODE:-en}" == "ja" ]]; then
+        echo -e "  ${BRED}✘  クエスト失敗${RESET}"
+    else
+        echo -e "  ${BRED}✘  QUEST FAILED${RESET}"
+    fi
     echo -e "  ${RED}$1${RESET}"
     echo ""
 }
 
 show_hint() {
-    echo -e "  ${YELLOW}💡 Hint: $1${RESET}"
+    if [[ "${LANG_MODE:-en}" == "ja" ]]; then
+        echo -e "  ${YELLOW}💡 ヒント: $1${RESET}"
+    else
+        echo -e "  ${YELLOW}💡 Hint: $1${RESET}"
+    fi
 }
 
 # ─────────────────────────────────────────
@@ -139,9 +159,15 @@ show_hint() {
 # ─────────────────────────────────────────
 chapter_banner() {
     local num="$1" title="$2" subtitle="$3"
+    local chapter_label
+    if [[ "${LANG_MODE:-en}" == "ja" ]]; then
+        chapter_label="第${num}章"
+    else
+        chapter_label="CHAPTER ${num}"
+    fi
     echo ""
     echo -e "${BMAGENTA}  ╔══════════════════════════════════════════════════════╗${RESET}"
-    printf "${BMAGENTA}  ║  ${BYELLOW}%-52s${BMAGENTA}  ║${RESET}\n" "CHAPTER ${num}: ${title}"
+    printf "${BMAGENTA}  ║  ${BYELLOW}%-52s${BMAGENTA}  ║${RESET}\n" "${chapter_label}: ${title}"
     printf "${BMAGENTA}  ║  ${CYAN}%-52s${BMAGENTA}  ║${RESET}\n" "${subtitle}"
     echo -e "${BMAGENTA}  ╚══════════════════════════════════════════════════════╝${RESET}"
     echo ""
@@ -153,8 +179,14 @@ chapter_banner() {
 show_reward() {
     local xp="$1" item="$2"
     echo ""
-    echo -e "  ${BYELLOW}★  REWARD EARNED!${RESET}"
-    echo -e "  ${YELLOW}  + ${xp} XP${RESET}"
-    echo -e "  ${CYAN}  + New Skill: ${item}${RESET}"
+    if [[ "${LANG_MODE:-en}" == "ja" ]]; then
+        echo -e "  ${BYELLOW}★  報酬獲得！${RESET}"
+        echo -e "  ${YELLOW}  + ${xp} XP${RESET}"
+        echo -e "  ${CYAN}  + 新スキル: ${item}${RESET}"
+    else
+        echo -e "  ${BYELLOW}★  REWARD EARNED!${RESET}"
+        echo -e "  ${YELLOW}  + ${xp} XP${RESET}"
+        echo -e "  ${CYAN}  + New Skill: ${item}${RESET}"
+    fi
     echo ""
 }
